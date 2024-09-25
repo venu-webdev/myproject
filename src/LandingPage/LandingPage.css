@@ -1,0 +1,58 @@
+/* Landing page container takes up full screen */
+.landing-page {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assests/home1.jpg'); /* Use the correct path */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating if the image is smaller */
+  overflow: hidden;
+}
+h1{
+ position: absolute;
+ top: 40%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ z-index: 2;
+
+}
+
+/* Keyframes for the movement */
+
+
+/* Styling for the "Get Started" button */
+.get-started-button {
+  z-index: 1;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1; /* Make sure the button is on top of the image */
+  transition: background-color 0.3s;
+}
+
+.get-started-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive design adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .get-started-button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .get-started-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
